@@ -1,6 +1,6 @@
 # Exercícios da Aula 8 
 
-# 16. Crie um programa que leia um númerio real qualquer pelo teclado e mostre sua porção inteira
+# 16. Crie um programa que leia um número real qualquer pelo teclado e mostre sua porção inteira
 from math import trunc
 num = float(input("Digite um número real: "))
 print(trunc(num))
