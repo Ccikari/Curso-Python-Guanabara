@@ -27,17 +27,45 @@ else:
     print("Dirija com segurança!")
 
 # 30. Crie um programa que leia um número inteiro qualquer e mostre se ele é PAR ou ÍMPAR
+n = int(input("Digite um número: "))
+if n == 0 or n % 2 == 0:
+    print("O número {} é par!".format(n))
+else:
+    print("O número {} é ímpar!".format(n))
+# eo prof fez assim:
+n = int(input("Me diga um número qualquer: "))
+resultado = n % 2
+if resultado == 0:
+    print("O número {} é par!".format(n))
+else:
+    print("O número {} é ímpar!".format(n))
 
 # 31. Desenvolva um programa que pergunte a distância de uma viagem em Km.
     # calcule o preço da passagem, cobrando R$0,50/Km para viagens até 200KM e R$0,45/Km para viagens mais longas
+viagem = float(input("Qual a distância (em Km) da viagem? "))
+p1 = viagem * 0.50
+p2 = viagem * 0.45
+if viagem <= 200:
+    print("A passagem custa R${:.2f}".format(p1))
+else:
+    print("A passagem custa R${:.2f}".format(p2))
 
 # 32. Faça um programa que leia um ano qualquer e mostre se ele é BISSEXTO
-
-# 33. Faça um programa que leia três números e mostre qual é maior e qual é menor
-
-# 34. Escreva um programa que pregunte o salário de um funcionário e calcule o valor do seu aumento.
-    # para salários superiores a R#1.250,00, calcule um aumento de 10%
-    # para os inferiores ou iguais, o aumento é de 15%
-
-# 35. Desenvolva um programa que leia o comprimento de três retas e diga ao usuário se elas podem ou não formar um triângulo
-    # em outra aula ele vai ensinar um complemento para essa questão
+ano = int(input("Digite o ano: "))
+if ano % 400 == 0: 
+    print("O ano {} é bissexto".format(ano))
+elif ano % 100 == 0:
+    print("O ano {} não é bissexto".format(ano))
+elif ano % 4 == 0:
+    print("O ano {} é bissexto".format(ano))
+else:
+    print("O ano {} não é bissexto".format(ano))
+# o prof fez assim: 
+import datetime
+ano = int(input("Que ano quer analisar? Coloque 0 para analisar o ano atual "))
+if ano == 0:
+    ano == datetime.date.today().year
+if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:
+    print("O ano {} é bissexto".format(ano))
+else:
+    print("O ano {} não é bissexto".format(ano))
