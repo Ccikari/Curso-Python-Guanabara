@@ -55,9 +55,9 @@ atual = 2025
 if atual - ano == 18:
     print("Está na hora de se alistar!")
 elif atual - ano < 18:
-    print("Ainda não é o momento, falta {} ano(s)".format(18 - (atual - ano)))
+    print("Ainda não é o momento, falta {} ano(s)".format(18 - (atual - ano))) # o prof fez saldo = 18 - idade
 else:
-    print("Já passou do tempo de se alistar faz {} anos(s)".format((atual -ano) - 18))
+    print("Já passou do tempo de se alistar faz {} anos(s)".format((atual -ano) - 18)) # o prof fez saldo = idade - 18
 
 # 40. Crie um programa que leia duas notas de um aluno e calcule sua média, mostrando uma mensagem no final, de acordo com a média atingida:
     # abaixo de 5.0: REPROVADO
